@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px dashed red;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <table align="center" border="2" cellpadding="0" cellspacing="0" width="500" height="10">
+        <thead>
+            <tr>
+                <!-- th會加粗居中 -->
+                <th>姓名</th>
+                <th>性別</th>
+                <th>年齡</th>
+                <th>配偶</th>
+                <th>相關資料</th>
+                <th>照片</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">邱繼元</td>
+                <td>&nbsp;男</td>
+                <td>25</td>
+                <td>吳孟真</td>
+                <td><a href="綜合練習.html">簡介</a></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td align="right">吳孟真</td>
+                <td>&nbsp;女</td>
+                <td>25</td>
+                <td>邱繼元</td>
+                <td><a href="#">簡介</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

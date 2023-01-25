@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <img src="/form.jpg" />
+    <orm action="xxx.php" method="get" name="form1">
+        <!-- name 就是取名字 選擇的要有同樣的name -->
+        <!-- vaule 一開始顯示的文字 在選擇裡就是傳回的值 -->
+        <!-- 可輸入任何文字 -->
+        帳號&nbsp;<input type="text" name="username" value="帳號最多八個字" maxlength="8" /> <br />
+        <!-- password 看不到輸入什麼字 -->
+        密碼&nbsp;<input type="password" name="pwd" value="密碼最多十個字" maxlength="10" /> <br />
+        <!-- radio 單選 (相同name下只能被選中一個)-->
+        <!-- <label for=""></label> for後面指定的值是用id寫的 -->
+        性別 <label for="sex">男生</label> <input type="radio" name="sex" id="sex" value="男" /> <label for="sex1">女生</label>
+        <input type="radio" name="sex" value="女" id="sex1" /> <br />
+        <!-- checkbox 可以勾起來的 -->
+        平常做啥：愛愛<input type="checkbox" name="hobby" value="愛愛" /> 吃飯 <input type="checkbox" name="hobby" value="吃飯
+        " /> 睡覺 <input type="checkbox" name="hobby" value="睡覺" /> <br />
+        <!-- checked 可以點開頁面就載入 -->
+        <input type="checkbox" value="同意" checked="true" />我同意以下規則 <br />
+        <!-- 把值傳給後端 -->
+        <input type="submit" value="送出" /> &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="重寫" /> <br />
+        <input type="button" value="點我拿大禮包" /> <br />
+        上傳文件的<input type="file" value="選擇" /> <br />
+        <!-- 下拉式ㄉ -->
+        想要選：
+        <select>
+            <!-- selected="selected" == checked="true" -->
+            <option selected="true">請選擇</option>
+            <option>選項1</option>
+            <option>選項2</option>
+            <option>選項3</option>
+        </select>
+        <!-- textarea 跟input text差不多但是可以一次很多行 -->
+
+        <form>
+            有沒有什麼想要說： <textarea rows="10" cols="10">
+
+            </textarea>
+        </form>
+
+        </htm

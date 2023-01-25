@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav {
+        height: 41px;
+        width: 1000px;
+        border-top: 3px solid orange;
+        border-bottom: 1px solid white;
+        background-color: pink;
+        line-height: 41px;
+        margin: 0 auto;
+        /* 左右居中 必須有寬度 */
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        height: 41px;
+        padding: 0 10px;
+        /* 不指定寬高就不會影響盒子大小 */
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        /* margin: 0 auto; */
+        /* 左右居中 必須有寬度 */
+    }
+
+    .nav a:hover {
+        background-color: chartreuse;
+        color: deepskyblue;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <a href="#">我</a>
+        <a href="#">喜歡</a>
+        <a href="#">吳孟真</a>
+        <a href="#">一輩都要</a>
+        <a href="#">在一起的吧?</a>
+    </div>
+</body>
+
+</html>

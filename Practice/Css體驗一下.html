@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css酷ㄛ</title>
+    <style>
+        /* 這個星號可以把全部的標籤都改變
+        head body啥的全部 */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+            /* text-align: center; */
+            text-decoration: overline;
+        }
+        a {
+            /* 取消超連結的下面那條線 要添加的話是 text-decoration: underline; */
+            text-decoration: none;
+        }
+        body {
+            /* 此段無法改變h1~h6的大小 */
+            font-size: 60px;
+            font-weight:bolder;
+            /* 也可以把h1~h6變回細體 h1 {font-weight: 400;} */
+        }
+        em {
+            /* 把傾斜的改回來 不知道要幹嘛== */
+            font-style: normal;
+        }
+        p { 
+            /*    style weight size family 順序不能改ㄛ 不改可以省略但是一定要有 size跟family*/
+            font: italic 700 16px 'Microsoft yahei';
+            /* 用來首行空格的那個東西啦 1em=一格字的大小 不管字大小(font-size)*/
+            text-indent: 2em;
+            /* 行跟行之間的間距 26px em也通壅 */
+            line-height: 2em;
+        }
+        .red {
+            color:red;
+        }
+        .blue {
+            color:blue;
+        }
+        /* 用class來指定某個標籤 .開頭 可以很多個標籤擁有同樣的class */
+        /* 用id來指定某個標籤 #開頭 id只能被一個使用(但多個同名id好像也能運行?) */
+        .green {
+            color: green;
+        }
+        .bk-red {
+       
+            width: 200px;
+            font-size:100px;
+            background-color: red;
+        }
+        .bk-green {
+            background-color: green;
+        }
+        .bk-blue {
+            background-color: blue;
+        }
+        .white {
+            color:white;
+        }
+        #Number {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>這是一段需要改變的文字巴拉巴拉11111111111111111111111111</p>
+    <p>欸欸嘿嘿我的女朋友超可愛好想娶她ㄛ11111111111111111111111111111111111111</p>
+    <p>好想趕快換個多一點錢的工作11111111111111111111111111111111</p>
+    <p>可以跟她一起同居養貓貓嗎1111111111111111111111111111111</p>
+    <p>不知道老爸老媽會不會難過我離開家裡111111111111111111111111111111111111111111
+        可能要常常回來看看他們吧
+    </p>
+    <p>唉不知道啦 
+        希望我不要再當請假惡徒了 ㄎㄎㄎㄎ
+    </p>
+    <ul>
+        <li class="red">我是藍色</li>
+        <li class="blue">我是紅色</li>
+        <li class="green">我是黃色</li>
+    </ul>
+<table>
+    <!-- 多個class中間用空格分開 -->
+    <tr class="bk-red white">
+        <td>123123</td>
+    </tr>
+    <tr class="bk-blue white">
+        <td>123123</td>
+    </tr>
+    <tr id="Number" class="bk-green white">
+        <td>123132</td>
+    </tr>
+</table>
+    
+</body>
+</html>
