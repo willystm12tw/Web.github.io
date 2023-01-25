@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    background-color: rgb(227, 216, 216);
+    background-image: url("../image/power.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+}
+
+.box {
+    border-radius: 8%;
+    width: 950px;
+    background-color: pink;
+    margin: 500px auto;
+}
+
+.box .left {
+    float: left;
+    width: 400px;
+    height: 300px;
+    border-radius: 8% 0 0 8%;
+    background-image: url(../image/pokita.jpg);
+    background-size: cover;
+    opacity: 85%;
+}
+
+.box .right {
+    font-weight: bolder;
+    border-radius: 0 8% 8% 0;
+    float: left;
+    width: 550px;
+    height: 300px;
+    background-image: url(../image/chainsaw.jpg);
+    background-size: cover;
+    opacity: 85%;
+}
+
+a {
+    color: rgb(15, 79, 198);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.remember .rememberme {
+    width: 22px;
+    float: left;
+}
+
+input {
+    height: 30px;
+}
+
+.last .login {
+    border-radius: 15%;
+    background-color: pink;
+    font-size: 20px;
+    width: 50px;
+    margin-top: 50px;
+}
+
+.remember .forgot {
+    float: right;
+    margin-right: 40%
+}
+
+.username,
+.password,
+.remember,
+.yet,
+.login {
+    margin-top: 30px;
+    margin-left: 30%
+}
+
+.username>input,
+.password>input {
+    font-size: 25px;
+    font-weight: bolder;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+
+.box .login {
+    margin: 15px 50%;
+}
+
+.side {
+    background-color: white;
+    width: 50px;
+    position: fixed;
+    top: 500px;
+    border-radius: 10%;
+}
+
+.side>div>img {
+    background-size: cover;
+    display: block;
+    margin: -5px;
+}
