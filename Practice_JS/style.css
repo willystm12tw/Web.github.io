@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+.guess {
+    border-radius: 30px;
+    background: none;
+    border: 6px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 3rem;
+    padding: 2rem;
+    width: 20rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(223, 221, 221);
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(175, 173, 173);
+}
+
+.line {
+    width: 100%;
+    margin: 10% 0 0 0;
+    background-color: white;
+    position: relative;
+}
+
+.check {
+    margin-left: 10%;
+    position: absolute;
+}
+
+.check .btn {
+    margin-left: 14%;
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+.gameRule {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    top: 1rem;
+    right: 22%;
+    height: 100px;
+    width: 1450px;
+    position: absolute;
+}
+
+#record {
+    font-size: 3rem;
+    right: 10%;
+    position: absolute;
+}
+
+#result {
+    top: 17%;
+    left: 37%;
+    font-size: 10rem;
+    position: absolute;
+}
+
+.resultFater {
+    position: relative;
+}
+
+#btn3 {
+    top: 100px;
+    position: absolute;
+}
