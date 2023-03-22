@@ -18,7 +18,7 @@ check.addEventListener("click", function () {    // check的按鈕事件監聽
         gameStop();
     }
 
-    if (count == 10) {
+    if (count == 11) {
         alert("一輪只能猜十次喔！");
         gameStop();
     }
