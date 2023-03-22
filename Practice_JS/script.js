@@ -1,4 +1,4 @@
-let A = 0, B = 0, count = 0;
+let A = 0, B = 0, count = 1;
 let answerArr = new Array(4), guessArr = new Array(4);
 var check = document.getElementById("btn");
 var reset = document.getElementById("btn3");
@@ -18,7 +18,7 @@ check.addEventListener("click", function () {    // check的按鈕事件監聽
         gameStop();
     }
 
-    if (count == 11) {
+    if (count == 10) {
         alert("一輪只能猜十次喔！");
         gameStop();
     }
