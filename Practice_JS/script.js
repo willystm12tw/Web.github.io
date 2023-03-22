@@ -61,11 +61,15 @@ function randomNum() {                      // 生成亂數
 }
 
 function getAnswer() {          //把玩家輸入的值存進陣列方便比對
-    var playInput = input.value;
-    guessArr[0] = parseInt(playInput / 1000);
-    guessArr[1] = parseInt(playInput / 100 - (guessArr[0] * 10));
-    guessArr[2] = parseInt(playInput / 10) - parseInt(playInput / 100) * 10
-    guessArr[3] = playInput - (parseInt(playInput / 10) * 10);
+    var playInput = input.value;    
+    guessArr[0] = Math.floor(playInput / 1000);
+    guessArr[1] = Math.floor((playInput / 100) % 10);
+    guessArr[2] = Math.floor((playInput / 10) % 10);
+    guessArr[3] = playInput % 10;
+    // guessArr[0] = parseInt(playInput / 1000);
+    // guessArr[1] = parseInt(playInput / 100 - (guessArr[0] * 10));
+    // guessArr[2] = parseInt(playInput / 10) - parseInt(playInput / 100) * 10
+    // guessArr[3] = playInput - (parseInt(playInput / 10) * 10);
     return guessArr;
 }
 
